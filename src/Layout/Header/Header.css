@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-inline: 20px;
+  padding-block: 40px;
+  max-width: 1200px;
+}
+.logo {
+  max-width: 150px;
+  object-fit: contain;
+}
+.header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 44px;
+  width: 400px;
+  border: 1.5px solid white;
+  border-radius: 50px;
+}
+.header-right p {
+  font-size: 14px;
+}
+.price-thor {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  border-right: 2px solid white;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  flex: 0.7;
+  height: 100%;
+  text-align: center;
+}
+.rule {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 1.5px;
+  height: 70%;
+  align-self: center;
+}
+
+.price-thor p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.address {
+  flex: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 20px;
+}
+@media screen and (max-width: 876px) {
+  .header {
+    padding-inline: 20px;
+  }
+}
+@media screen and (max-width: 668px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 482px) {
+  .header-right {
+    width: 350px;
+  }
+  .header-right p {
+    font-size: 14px;
+  }
+  .header-right span {
+    font-size: 13px;
+  }
+}

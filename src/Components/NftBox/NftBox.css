@@ -1,0 +1,204 @@
+.nft-box {
+  width: 240px;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.top-nft {
+  position: relative;
+  background-color: #0f0d09;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.top-nft p {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  width: min-content;
+  color: white;
+}
+.top-nft img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.bottom-nft {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -4px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding-inline: 10px;
+  height: 100%;
+  background: linear-gradient(
+    92.91deg,
+    rgba(19, 22, 30, 0.76) 1.78%,
+    rgba(19, 22, 30, 0.62) 99.64%
+  );
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.72);
+}
+.specs-nft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 93px;
+  color: white;
+}
+.spec-row p {
+  font-size: 0.9rem;
+}
+.spec-row h3 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 12px;
+  background: linear-gradient(
+    112.98deg,
+    #fff4d1 8.47%,
+    #f5d28f 23.3%,
+    #675537 91.31%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.spec-row:first-child p {
+  font-weight: 300;
+}
+.spec-row:last-child p {
+  font-weight: 500;
+}
+
+.rent {
+  width: 94px;
+  height: 34px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 15px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 400;
+  background-image: linear-gradient(
+    90deg,
+    #0065ff,
+    #6942ef,
+    #6554c0,
+    #008cff,
+    #0065ff,
+    #6942ef
+  );
+  background-size: 400%;
+  background-position: 0% 0%;
+  border-radius: 60px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  position: relative;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  transition-property: background, color;
+}
+.rent::before,
+.active-btn::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 26px;
+  background-image: linear-gradient(
+    90deg,
+    #0065ff,
+    #6942ef,
+    #6554c0,
+    #008cff,
+    #0065ff,
+    #6942ef
+  );
+  background-size: 500%;
+  background-position: 0% 0%;
+  filter: blur(10px);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.2s;
+}
+.rent:hover,
+.active-btn:hover {
+  animation: gradientRotate 2s infinite;
+  color: white !important;
+}
+.rent:hover::before,
+.active-btn::before {
+  opacity: 1;
+  animation: gradientRotate 2s infinite;
+}
+.rent:active,
+.active-btn:active {
+  color: #c3c4d5;
+}
+.rent:focus::before,
+.active-btn:focus::before {
+  opacity: 1;
+}
+@keyframes gradientRotate {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+.grey-rent {
+  background: none;
+  background-color: #747474;
+  width: 94px;
+  height: 34px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 15px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  position: relative;
+  border: none;
+  border-radius: 60px;
+}
+.active-btn {
+  background-color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    #0065ff,
+    #6942ef,
+    #6554c0,
+    #008cff,
+    #0065ff,
+    #6942ef
+  );
+  background-size: 400%;
+  background-position: 0% 0%;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  transition-property: background, color;
+  position: relative;
+}

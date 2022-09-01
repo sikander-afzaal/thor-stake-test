@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Trajan";
+  src: url("./Assets/fonts/h1/TrajanPro-Regular.ttf");
+}
+@font-face {
+  font-family: "Segoe";
+  src: url("./Assets/fonts/Segoe/SEGOEUI.TTF");
+}
+.App {
+  background: linear-gradient(
+    180deg,
+    #2e62ff 9.73%,
+    #4b24dc 35.34%,
+    #12151e 69.86%
+  );
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.kanit {
+  font-family: "Kanit", sans-serif;
+}
+.noto-sans {
+  font-family: "Noto Sans", sans-serif;
+}
+.segoe {
+  font-family: "Segoe", sans-serif;
+}
+.trajan {
+  font-family: "Trajan", sans-serif;
+}
+.overflow {
+  overflow-y: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
